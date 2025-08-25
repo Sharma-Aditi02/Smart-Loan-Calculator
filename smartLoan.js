@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded",()=>{
             return;
         }
         const x=Math.pow(1+annual,year);
-        const monthly=(input1*annual*x)/x-1;
+        const monthly=(input1*annual*x)/(x-1);
         if(isFinite(monthly)){
             const total=monthly*year;
             const totalInterest=total-input1;
@@ -48,5 +48,6 @@ document.addEventListener("DOMContentLoaded",()=>{
     btn.addEventListener("click",calculateLoan);
 
     
+
 
 })
